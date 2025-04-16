@@ -45,6 +45,13 @@
     background-color: rgba($color-primary, 0.8);
 
     font-size: 1.125rem;
+
+    @include sm-min {
+      min-width: 350px;
+    }
+    @include sm {
+      width: 100%;
+    }
   }
 }
 

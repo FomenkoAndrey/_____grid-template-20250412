@@ -1,4 +1,4 @@
-@use '../../abstracts' as *;
+@use "../../abstracts" as *;
 
 .header__navbar {
   &-list {
@@ -47,8 +47,7 @@
       opacity: 1;
       transform: rotate(0deg);
       transition: 0.25s ease-in-out;
-
-      &:nth-child(even) {
+      w &:nth-child(even) {
         left: 50%;
         border-radius: 0 3px 3px 0;
       }
