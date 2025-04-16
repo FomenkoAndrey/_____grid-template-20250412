@@ -47,7 +47,8 @@
       opacity: 1;
       transform: rotate(0deg);
       transition: 0.25s ease-in-out;
-      w &:nth-child(even) {
+
+      &:nth-child(even) {
         left: 50%;
         border-radius: 0 3px 3px 0;
       }
