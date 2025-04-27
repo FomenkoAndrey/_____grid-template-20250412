@@ -2,8 +2,9 @@
 @use "sass:color";
 
 .posts__item {
-  background-color: $color-gray-light2;
   transition: background-color 0.3s;
+
+  background-color: $color-gray-light2;
 
   &:hover {
     background-color: color.adjust($color-gray-light2, $lightness: -10%);
@@ -18,25 +19,29 @@
   }
 
   &-picture {
+    display: flex;
     overflow: hidden;
+
     height: 300px;
   }
 
   &-image {
     display: block;
+
+    width: 100%;
+    height: 100%;
+
     transition: transform 0.3s;
+
+    object-fit: cover;
   }
 
   &-content {
     padding: 1.25em 1.875em;
+
     text-align: center;
+
     line-height: 1.25;
-  }
-
-  &-title {
-  }
-
-  &-description {
   }
 
   @for $i from 1 through 6 {
